@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Iletisim";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content">
+    <div class="iletisim-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text">
+                        <p>iletişim</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="iletisim-baslik">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="title">
+                        <h5>uğrayın</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="title">
+                        <h5>mesaj g&ouml;nderin</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="iletisim-icerik">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="map"><iframe allowfullscreen="" frameborder="0" height="290" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3011.889081452181!2d29.15422531541325!3d40.98390957930312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDU5JzAyLjEiTiAyOcKwMDknMjMuMSJF!5e0!3m2!1str!2str!4v1676307969079!5m2!1str!2str" style="border:0" width="414"></iframe></div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="iletisim-bilgileri">
+                        <div class="adres">
+                            <div class="icon"></div>
+
+                            <div class="text">
+                                <p>Mevlana mah.Namık kemal cad.Manolyam Sk.No:13/B, Istanbul, Turkey</p>
+                            </div>
+                        </div>
+
+                        <div class="telefon">
+                            <div class="icon"></div>
+
+                            <div class="text">
+                                <p> 0 (216) 661 21 51</p>
+                            </div>
+                        </div>
+
+                        <div class="mail">
+                            <div class="icon"></div>
+
+                            <div class="text"><a href="#">3ggroupotomotiv@gmail.com</a></div>
+                        </div>
+                    </div>
+                    <a class="yol-tarifi-button" href="#" role="button">yol tarifi al</a>
+                </div>
+
+                <div class="col-md-4">
+                    <form action="http://www.sahinotomotiv.com/iletisim.php" class="iletisim-form" method="post">
+                        <div class="form-group"><input autocomplete="off" class="form-control" id="inputName" name="adsoyad" placeholder="Adınız Soyadınız" type="text" /></div>
+
+                        <div class="form-group"><input autocomplete="off" class="form-control" id="inputEmail" name="email" placeholder="E-Posta Adresiniz " type="email" /></div>
+
+                        <div class="form-group"><input autocomplete="off" class="form-control" id="inputNumber" name="tel" placeholder="Telefon Numaranız" type="tel" /></div>
+
+                        <div class="form-group"><input autocomplete="off" class="form-control" id="inputKonu" name="konu" placeholder="Konu" type="text" /></div>
+
+                        <div class="form-group"><textarea autocomplete="off" class="form-control" id="inputmessage" name="mesaj" placeholder="Mesajınız" type="textarea"></textarea></div>
+                        <button class="iletisim-form-button" type="submit">g&ouml;nder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

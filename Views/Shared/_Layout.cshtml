@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - _3G_Group_Otomotiv</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/_3G_Group_Otomotiv.styles.css" asp-append-version="true" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>3G GROUP OTOMOTİV</title>
+    <link rel="stylesheet" href="~/assets/js/bootstrap-4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:200i,300,300i,400,500,500i,600,600i,700,800,900">
+    <link rel="stylesheet" href="~/assets/css/style.css">
+    <link rel="stylesheet" href="~/assets/css/settings.css">
+    <link rel="stylesheet" href="~/assets/css/layers.css">
+    <link rel="stylesheet" href="~/assets/css/navigation.css">
+    <link rel="stylesheet" href="~/assets/css/animated.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <script type="text/javascript" src="~/assets/js/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/slider.js"></script>
+    <script type="text/javascript" src="~/assets/js/custom.js"></script>
+
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/extensions/revolution.extension.video.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter .item .number p').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/3ggroup.com.tr/" target="_blank">
+                        <i class="zmdi zmdi-facebook"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-12">
+                        <a href="index-2.html">
+                            <div class="logo">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-10 col-12">
+                        <ul class="nav menu custom-menu">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../">Anasayfa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="~/Home/Kurumsal">Kurumsal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="~/Home/Tedarikcilerimiz">Tedarikçilerimiz</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="~/Home/Iletisim">İletişim</a>
+                            </li>
+                            <li class="nav-item b2b-button">
+                                <a class="nav-link" href="https://b2b.3ggroup.com.tr/Account/Login/?ReturnUrl=%2F" target="_blank">
+                                    B2B
+                                    Giriş
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="mobil-menu-open"><i class="zmdi zmdi-menu"></i> Menü</p>
+        <div class="mobile-menu" style="display: none;">
+            <a href="index-2.html">
+                <div class="mobile-logo">
+                    <h1>3G GROUP OTOMOTİV</h1>
+                </div>
+            </a>
+            <p class="mobile-menu-close"><i class="zmdi zmdi-close-circle-o"></i> Kapat</p>
+            <div class="menu-icerik">
+                <li><a href="~/">anasayfa</a></li>
+                <li><a href="~/Home/Kurumsal">kurumsal</a></li>
+                <li><a href="~/Home/Tedarikcilerimiz">tedarikcilerimiz</a></li>
+
+                <li><a href="~/Home/Iletisim">iletişim</a></li>
+                <li><a href="https://b2b.3ggroup.com.tr/Account/Login/?ReturnUrl=%2F">B2B Giriş</a></li>
+            </div>
+        </div>
+    </header>
+
+    @RenderBody();
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-logo"></div>
+                    </div>
+                    <div class="adres">
+                        <p><i class="zmdi zmdi-pin"></i> Mevlana mah.Namık kemal cad.Manolyam Sk.No:13/B, Istanbul, Turkey</p>
+                    </div>
+                    <div class="telefon">
+                        <p><i class="zmdi zmdi-phone"></i> 0 (216) 661 21 51</p>
+                    </div>
+                    <div class="mail">
+                        <a href="#"><i class="zmdi zmdi-email"></i> 3ggroupotomotiv@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="copyright">
+                            <p>
+                                3G Group international otomotiv san.tic.ltd.şti
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.nanoyazilim.com.tr/" target="_blank" title="Nano Yazılım ve Teknoloji Hizmetleri | Balıkesir Web Tasarım ve Yazılım"><div class="nano-logo"></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/assets/js/popper.min.js"></script>
+    <script src="~/assets/js/bootstrap-4.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/waypoints.min.js"></script>
+    <script src="~/assets/js/jquery.counterup.min.js"></script>
+   
+</body>
+</html>

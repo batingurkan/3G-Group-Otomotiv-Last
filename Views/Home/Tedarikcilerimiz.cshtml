@@ -1,0 +1,391 @@
+﻿
+@{
+    ViewData["Title"] = "Tedarikciler";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content">
+    <div class="tedarikcilerimiz-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text">
+                        <p>
+                            tedarikçilerimiz
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tedarikci-icerik">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-3">
+                    <div id="filters">
+                        <div class="title">
+                            <h5>ürün grupları</h5>
+                        </div>
+                        <ul>
+                            <li>
+                                <label class="form-check-label-2">
+                                    oem yedek parça
+                                    <input type="checkbox" name="oemYedekParca" value=".oemYedekParca"
+                                           id="oemYedekParca">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    Fren
+                                    <input type="checkbox" name="fren" value=".fren" id="fren">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    ön takım süspansiyon
+                                    <input type="checkbox" name="onTakimSuspansiyon" value=".onTakimSuspansiyon"
+                                           id="onTakimSuspansiyon">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    debriyaj ve şanzıman
+                                    <input type="checkbox" name="debriyajSanziman" value=".debriyajSanziman"
+                                           id="debriyajSanziman">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    soğutma ve ısıtma
+                                    <input type="checkbox" name="sogutmaisitma" value=".sogutmaisitma"
+                                           id="sogutmaisitma">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    yakıt enjeksiyon
+                                    <input type="checkbox" name="yakitEnjeksiyon" value=".yakitEnjeksiyon"
+                                           id="yakitEnjeksiyon">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    filtre
+                                    <input type="checkbox" name="filtre" value=".filtre" id="filtre">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    kauçuk aksam
+                                    <input type="checkbox" name="kaucukAksam" value=".kaucukAksam" id="kaucukAksam">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    ateşleme
+                                    <input type="checkbox" name="atesleme" value=".atesleme" id="atesleme">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    motor
+                                    <input type="checkbox" name="motor" value=".motor" id="motor">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    Akü
+                                    <input type="checkbox" name="kendiMarkamiz" value=".kendiMarkamiz"
+                                           id="kendiMarkamiz">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    aydınlatma
+                                    <input type="checkbox" name="aydinlatma" value=".aydinlatma" id="aydinlatma">
+                                    <span class="checkmark-2"></span>
+                                </label>
+                                <label class="form-check-label-2">
+                                    elektrik
+                                    <input type="checkbox" name="elektrik" value=".elektrik" id="elektrik">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    aktarma
+                                    <input type="checkbox" name="aktarma" value=".aktarma" id="aktarma">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    trim
+                                    <input type="checkbox" name="trim" value=".trim" id="trim">
+                                    <span class="checkmark-2"></span>
+                                </label>
+                                <label class="form-check-label-2">
+                                    yağ
+                                    <input type="checkbox" name="yag" value=".yag" id="yag">
+                                    <span class="checkmark-2"></span>
+                                </label>
+
+                                <label class="form-check-label-2">
+                                    kayış ve rulman
+                                    <input type="checkbox" name="kayisRulman" value=".kayisRulman" id="kayisRulman">
+                                    <span class="checkmark-2"></span>
+                                </label>
+                                <label class="form-check-label-2">
+                                    tel
+                                    <input type="checkbox" name="tel" value=".tel" id="tel">
+                                    <span class="checkmark-2"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="markalar" class="col-md-9 col-xs-9">
+                    <div class="item oemYedekParca">
+                        <img src="~/assets/images/peugeot-logo.png" />
+                    </div>
+                    <div class="item fren">
+                        <img src="~/assets/images/bmw.jpg" />
+                    </div>
+                    <div class="item oemYedekParca">
+                        <img src="~/assets/images/renault-logo.png" />
+                    </div>
+                    <div class="item oemYedekParca">
+                        <img src="~/assets/images/opel-logo.png" />
+                    </div>
+                    <div class="item onTakimSuspansiyon">
+                        <img src="~/assets/images/mercedes2.png" />
+                    </div>
+                    <div class="item oemYedekParca">
+                        <img src="~/assets/images/fiat-logo.png" />
+                    </div>
+                    <div class="item fren aktarma">
+                        <img src="~/assets/images/audi.jpg" />
+                    </div>
+                    <div class="item fren onTakimSuspansiyon">
+                        <img src="~/assets/images/bosch-logo.png" />
+                    </div>
+                    <div class="item fren onTakimSuspansiyon">
+                        <img src="~/assets/images/filtron-black.jpg" />
+                    </div>
+                    <div class="item fren">
+                        <img src="~/assets/images/mando1.jpg" />
+                    </div>
+                    <div class="item fren">
+                        <img src="~/assets/images/indir.jpg" />
+                    </div>
+                    <div class="item fren">
+                        <img src="~/assets/images/osaka1.jpg" />
+                    </div>
+                    
+                    <div class="item fren onTakimSuspansiyon sogutmaisitma kayisRulman atesleme aktarma">
+                        <img src="~/assets/images/delphi-logo.png" />
+                    </div>
+                    <div class="item fren">
+                        <img src="~/assets/images/zegen.png" />
+                    </div>
+                   
+                    <div class="item onTakimSuspansiyon">
+                        <img src="~/assets/images/logo-purflux.png" />
+                    </div>
+                    <div class="item onTakimSuspansiyon">
+                        <img src="~/assets/images/osaka-logo.jpg" />
+                    </div>
+                    <div class="item onTakimSuspansiyon">
+                        <img src="~/assets/images/valeo-logo.png" />
+                    </div>
+                    <div class="item onTakimSuspansiyon">
+                        <img src="~/assets/images/VEKA-RENKLI-LOGO.png"/>
+                    </div>
+                    
+                    <div class="item onTakimSuspansiyon">
+                        <img src="~/assets/images/monroe-logo.png" />
+                    </div>
+                    <div class="item onTakimSuspansiyon">
+                        <img src="~/assets/images/motortec-logo.png" />
+                    </div>
+                    <div class="item onTakimSuspansiyon debriyajSanziman">
+                        <img src="~/assets/images/sachs-logo.png" />
+                    </div>
+                    <div class="item onTakimSuspansiyon fren">
+                        <img src="~/assets/images/zegen3.png" />
+                    </div>
+                    <div class="item debriyajSanziman">
+                        <img src="~/assets/images/fte-logo.png" />
+                    </div>
+                    <div class="item debriyajSanziman">
+                        <img src="~/assets/images/luk-logo.png" />
+                    </div>
+                    <div class="item debriyajSanziman">
+                        <img src="~/assets/images/mapa-logo.png" />
+                    </div>
+                    <div class="item debriyajSanziman">
+                        <img src="~/assets/images/valeo-logo.png" />
+                    </div>
+                    <div class="item sogutmaisitma motor kayisRulman">
+                        <img src="~/assets/images/gmb.png" />
+                    </div>
+                  
+                    <div class="item sogutmaisitma">
+                        <img src="~/assets/images/graf-logo.png" />
+                    </div>
+                    <div class="item sogutmaisitma">
+                        <img src="~/assets/images/motortec-logo.png" />
+                    </div>
+                    <div class="item sogutmaisitma">
+                        <img src="~/assets/images/oes.png" />
+                    </div>
+                    <div class="item sogutmaisitma">
+                        <img src="~/assets/images/wutse-logo.png" />
+                    </div>
+                    <div class="item yakitEnjeksiyon">
+                        <img src="~/assets/images/sofabex.png" />
+                    </div>
+                    <div class="item filtre">
+                        <img src="~/assets/images/wunder-logo.png" />
+                    </div>
+                    <div class="item kaucukAksam">
+                        <img src="~/assets/images/gb-logo.png" />
+                    </div>
+                    <div class="item kaucukAksam">
+                        <img src="~/assets/images/gomet.png" />
+                    </div>
+                    <div class="item kaucukAksam">
+                        <img src="~/assets/images/gros-logo.png" />
+                    </div>
+                    <div class="item sogutmaisitma">
+                        <img src="~/assets/images/zegen.png" />
+                    </div>
+                    <div class="item kaucukAksam">
+                        <img src="~/assets/images/ibras-logo.png" />
+                    </div>
+                    <div class="item kaucukAksam">
+                        <img src="~/assets/images/ucel-logo.png" />
+                    </div>
+                    <div class="item atesleme">
+                        <img src="~/assets/images/ans-buji-logo.png" />
+                    </div>
+                    <div class="item atesleme">
+                        <img src="~/assets/images/bosch-logo.png" />
+                    </div>
+                    <div class="item filtre atesleme">
+                        <img src="~/assets/images/delphi-logo.png" />
+                    </div>
+                    <div class="item atesleme">
+                        <img src="~/assets/images/denso-logo.png" />
+                    </div>
+                    <div class="item atesleme">
+                        <img src="~/assets/images/hellux-logo.png" />
+                    </div>
+                    <div class="item atesleme">
+                        <img src="~/assets/images/mako_logo.png" />
+                    </div>
+                    <div class="item atesleme">
+                        <img src="~/assets/images/motortec-logo.png" />
+                    </div>
+                    <div class="item atesleme">
+                        <img src="~/assets/images/ngk-logo.png" />
+                    </div>
+                    <div class="item motor">
+                        <img src="~/assets/images/alfa-krank-logo.png" />
+                    </div>
+                    <div class="item motor kayisRulman atesleme fren">
+                        <img src="~/assets/images/zenon-logo.png" />
+                    </div>
+                    <div class="item motor">
+                        <img src="~/assets/images/egts-logo.png" />
+                    </div>
+                    <div class="item motor">
+                        <img src="~/assets/images/estas.png" />
+                    </div>
+                    <div class="item motor">
+                        <img src="~/assets/images/garrett.png" />
+                    </div>
+                    <div class="item motor">
+                        <img src="~/assets/images/glyco.png" />
+                    </div>
+                    <div class="item motor">
+                        <img src="~/assets/images/goetze.png" />
+                    </div>
+                    <div class="item motor">
+                        <img src="~/assets/images/motortec-logo.png" />
+                    </div>
+                    <div class="item motor">
+                        <img src="~/assets/images/nurral.png" />
+                    </div>
+                   
+                    <div class="item motor">
+                        <img src="~/assets/images/oygarsan.png" />
+                    </div>
+                    <div class="item motor">
+                        <img src="~/assets/images/ozgayd.png" />
+                    </div>
+                    <div class="item motor">
+                        <img src="~/assets/images/pierburg-logo.png" />
+                    </div>
+                    <div class="item motor">
+                        <img src="~/assets/images/preswitch.png" />
+                    </div>
+                    <div class="item motor">
+                        <img src="~/assets/images/royal.png" />
+                    </div>
+                    <div class="item motor">
+                        <img src="~/assets/images/sahin-motor-yakalari-logo.png" />
+                    </div>
+                    <div class="item motor">
+                        <img src="~/assets/images/supsan-logo.png" />
+                    </div>
+                    <div class="item motor">
+                        <img src="~/assets/images/victor-reinz-logo.png" />
+                    </div>
+                    <div class="item kendiMarkamiz">
+                        <img src="~/assets/images/energy-aku-logo.png" />
+                    </div>
+                    <div class="item aydinlatma">
+                        <img src="~/assets/images/mako_logo.png" />
+                    </div>
+                    <div class="item aydinlatma elektrik">
+                        <img src="~/assets/images/tungsram-logo.png" />
+                    </div>
+                    <div class="item aktarma">
+                        <img src="~/assets/images/odm.png" />
+                    </div>
+                    <div class="item trim">
+                        <img src="~/assets/images/dekar-logo.png" />
+                    </div>
+                    <div class="item trim">
+                        <img src="~/assets/images/vitesse-logo.png" />
+                    </div>
+                    <div class="item yag">
+                        <img src="~/assets/images/speedol-logo.png" />
+                    </div>
+                    <div class="item kayisRulman">
+                        <img src="~/assets/images/alt-tensioner.png" />
+                    </div>
+                    <div class="item kayisRulman">
+                        <img src="~/assets/images/daycomfa-logo.png" />
+                    </div>
+                    <div class="item kayisRulman">
+                        <img src="~/assets/images/gates-logo-new.png" />
+                    </div>
+                    <div class="item kayisRulman">
+                        <img src="~/assets/images/ors.png" />
+                    </div>
+                    <div class="item kayisRulman">
+                        <img src="~/assets/images/snr-logo.png" />
+                    </div>
+                    <div class="item kayisRulman">
+                        <img src="~/assets/images/voe.png" />
+                    </div>
+                    <div class="item tel">
+                        <img src="~/assets/images/cavo-logo.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
